@@ -22,9 +22,6 @@ yarn-error.log*
 .env.*
 !.env.example
 
-# local tooling
-.freebuff/
-
 # vercel
 .vercel
 
