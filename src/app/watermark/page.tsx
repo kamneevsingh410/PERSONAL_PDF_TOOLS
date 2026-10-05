@@ -39,8 +39,8 @@ export default function WatermarkPage() {
       <Navbar title="Add Watermark" showBack />
       <main className="mx-auto max-w-3xl px-6 py-16">
         <div className="mb-8 text-center">
-          <div className="mb-4 inline-flex rounded-2xl bg-indigo-50 p-4">
-            <Stamp className="h-8 w-8 text-indigo-600" />
+          <div className="mb-4 inline-flex rounded-2xl bg-slate-100 p-4">
+            <Stamp className="h-8 w-8 text-slate-600" />
           </div>
           <h1 className="mb-3 text-3xl font-bold text-slate-900">Add Watermark</h1>
           <p className="text-slate-500">

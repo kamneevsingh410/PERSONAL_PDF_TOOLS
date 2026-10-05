@@ -33,8 +33,8 @@ export default function PdfToImagesPage() {
       <Navbar title="PDF to Images" showBack />
       <main className="mx-auto max-w-3xl px-6 py-16">
         <div className="mb-8 text-center">
-          <div className="mb-4 inline-flex rounded-2xl bg-purple-50 p-4">
-            <Image className="h-8 w-8 text-purple-600" />
+          <div className="mb-4 inline-flex rounded-2xl bg-sky-50 p-4">
+            <Image className="h-8 w-8 text-sky-600" />
           </div>
           <h1 className="mb-3 text-3xl font-bold text-slate-900">PDF to Images</h1>
           <p className="text-slate-500">

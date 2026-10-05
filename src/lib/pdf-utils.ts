@@ -136,7 +136,7 @@ export async function pdfToImages(file: File): Promise<void> {
 
 // ─── New tools (return PDFResult for ResultCard display) ────────────────
 
-/** Compress PDF — returns result for display */
+/** Compress PDF, returns result for display */
 export async function compressPDF(
   file: File,
   quality: 'low' | 'medium' | 'high' = 'medium',

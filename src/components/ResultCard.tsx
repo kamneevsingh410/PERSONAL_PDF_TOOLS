@@ -36,12 +36,12 @@ export default function ResultCard({ result }: ResultCardProps) {
           <ArrowDown className="h-5 w-5 text-slate-300 sm:hidden" />
           <div className="hidden sm:block text-slate-300 text-lg">→</div>
           {savedSize && (
-            <span className="mt-1 text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">
+            <span className="mt-1 text-xs font-medium text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
               −{ratio}%
             </span>
           )}
           {!savedSize && (
-            <span className="mt-1 text-xs font-medium text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full">
+            <span className="mt-1 text-xs font-medium text-slate-400 bg-slate-100 px-2 py-0.5 rounded-md">
               +{formatBytes(Math.abs(saved))}
             </span>
           )}
@@ -64,7 +64,7 @@ export default function ResultCard({ result }: ResultCardProps) {
       {/* Download button */}
       <button
         onClick={() => downloadResult(result)}
-        className="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/30 hover:brightness-110"
+        className="w-full flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/20 transition-colors duration-200 hover:bg-blue-700"
       >
         <Download className="h-5 w-5" />
         Download

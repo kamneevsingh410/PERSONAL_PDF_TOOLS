@@ -57,8 +57,8 @@ export default function PasswordPage() {
       <Navbar title="Password Protect" showBack />
       <main className="mx-auto max-w-3xl px-6 py-16">
         <div className="mb-8 text-center">
-          <div className="mb-4 inline-flex rounded-2xl bg-violet-50 p-4">
-            <ShieldCheck className="h-8 w-8 text-violet-600" />
+          <div className="mb-4 inline-flex rounded-2xl bg-cyan-50 p-4">
+            <ShieldCheck className="h-8 w-8 text-cyan-600" />
           </div>
           <h1 className="mb-3 text-3xl font-bold text-slate-900">Password Protect</h1>
           <p className="text-slate-500">
@@ -72,7 +72,7 @@ export default function PasswordPage() {
             onClick={() => { setMode('encrypt'); setResult(null); }}
             className={`flex items-center justify-center gap-2 rounded-xl p-4 font-medium transition-all duration-200 ${
               mode === 'encrypt'
-                ? 'bg-violet-50 border-2 border-violet-500 text-slate-800 shadow-sm'
+                ? 'bg-cyan-50 border-2 border-cyan-500 text-slate-800 shadow-sm'
                 : 'bg-slate-50 border-2 border-slate-200 text-slate-500 hover:bg-slate-100'
             }`}
           >
@@ -83,7 +83,7 @@ export default function PasswordPage() {
             onClick={() => { setMode('decrypt'); setResult(null); }}
             className={`flex items-center justify-center gap-2 rounded-xl p-4 font-medium transition-all duration-200 ${
               mode === 'decrypt'
-                ? 'bg-violet-50 border-2 border-violet-500 text-slate-800 shadow-sm'
+                ? 'bg-cyan-50 border-2 border-cyan-500 text-slate-800 shadow-sm'
                 : 'bg-slate-50 border-2 border-slate-200 text-slate-500 hover:bg-slate-100'
             }`}
           >
@@ -109,7 +109,7 @@ export default function PasswordPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-800 placeholder-slate-400 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/20 transition-all"
+              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-800 placeholder-slate-400 outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
               placeholder={mode === 'encrypt' ? 'Choose a password...' : 'Enter existing password...'}
             />
             {mode === 'encrypt' && (

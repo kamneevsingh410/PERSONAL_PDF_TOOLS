@@ -21,10 +21,10 @@ export default function Navbar({ title, showBack = false }: NavbarProps) {
           </Link>
         )}
         <Link href="/" className="flex items-center gap-3">
-          <div className="rounded-xl bg-gradient-to-br from-blue-500 to-violet-600 p-2 shadow-md shadow-blue-500/10">
+          <div className="rounded-xl bg-blue-600 p-2 shadow-md shadow-blue-500/10">
             <FileText className="h-6 w-6 text-white" />
           </div>
-          <span className="text-xl font-bold gradient-text">
+          <span className="text-xl font-bold text-slate-900">
             {title || 'PDF Toolkit'}
           </span>
         </Link>

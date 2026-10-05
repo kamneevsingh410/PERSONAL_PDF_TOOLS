@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from 'react-hot-toast';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'PDF Toolkit — Your Personal iLovePDF',
-  description: 'Merge, compress, split, convert, and rotate PDFs — all client-side, completely free.',
+  title: 'PDF Toolkit | Free PDF tools that run in your browser',
+  description:
+    'Merge, compress, split, convert, and rotate PDFs in your browser. No uploads, completely free.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="min-h-screen bg-slate-50 text-slate-800 antialiased">
-        <div className="blob-bg" />
         <Toaster
           position="bottom-right"
           toastOptions={{
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         {children}
+        <Footer />
       </body>
     </html>
   );
